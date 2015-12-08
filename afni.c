@@ -10196,7 +10196,7 @@ ENTRY("AFNI_compfc_CB");
 	//sprintf(cmd,"./3drefit -atrcopy %s BRICK_STATS Connectivity+orig.", DSET_PREFIX(dset));
 	//system(cmd);
 	sprintf(cmd,"./3drefit -redo_bstat -markers Connectivity+orig.");
-	system(cmd);
+	//system(cmd);
 	MCW_choose_cbs cbs ; char *cpt=AFNI_controller_label(im3d) ;
 	cbs.ival = nds ;
 	AFNI_finalize_dataset_CB( im3d->vwid->view->choose_func_pb, (XtPointer)im3d , &cbs);
